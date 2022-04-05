@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">OnlineShop</string>
+
+    <string name="first_slide">Choose Your Products</string>
+    <string name="second_slide">Fast Delivery</string>
+    <string name="third_slide">Good Service</string>
+    <string name="description">OnlineShop Lorem ipsum is simply dummy text and this is awesome.</string>
 </resources>
