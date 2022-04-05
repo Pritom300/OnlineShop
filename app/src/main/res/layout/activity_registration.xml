@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity"
+    android:background="@drawable/designlogin2">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Sign Up"
+        android:textColor="@color/textHeading"
+        android:textSize="40sp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+
+    <EditText
+        android:background="@drawable/edit_text_bg"
+        android:layout_width="338dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:hint="Name"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:id="@+id/name"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="338dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/ic_baseline_account_circle"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="Email"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/password"
+        android:inputType="numberPassword"
+        android:layout_width="338dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="192dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="Enter Password"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="185dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="60dp"
+        android:onClick="signup"
+
+        android:padding="15dp"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Have An Account?"
+
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.179"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:onClick="signin"
+        android:text="Sign In"
+        android:textColor="@color/pink"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="321dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
